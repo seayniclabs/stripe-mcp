@@ -2,6 +2,8 @@
 
 Small [Model Context Protocol](https://modelcontextprotocol.io) server for **read-only** Stripe data: balance, customers, payment intents, invoices, products, prices.
 
+**Repository:** https://github.com/seayniclabs/stripe-mcp
+
 - **Free**, self-hosted, stdio transport
 - **No** create/update/delete tools — use a [restricted key](https://docs.stripe.com/keys#create-restricted-api-secret-key) with read-only permissions when possible
 
