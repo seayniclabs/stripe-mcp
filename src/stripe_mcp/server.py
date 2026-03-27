@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Stripe MCP — read-only tools for balances, customers, payment intents, invoices,
 products, and prices. Uses STRIPE_SECRET_KEY from the environment (stdio transport).
@@ -20,8 +19,6 @@ from mcp.server.fastmcp import FastMCP
 
 logging.getLogger("stripe").setLevel(logging.WARNING)
 
-stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
-
 mcp = FastMCP(
     "Stripe (read-only)",
     instructions=(
@@ -42,8 +39,10 @@ def _as_json(obj: Any) -> str:
 
 
 def _stripe_tool(fn: Callable[[], Any]) -> str:
-    if not stripe.api_key:
+    key = os.environ.get("STRIPE_SECRET_KEY", "")
+    if not key:
         return _no_key()
+    stripe.api_key = key
     try:
         return _as_json(fn())
     except ValueError as e:
