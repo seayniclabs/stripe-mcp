@@ -1,0 +1,10 @@
+[project]
+name = "stripe-mcp"
+version = "0.1.0"
+description = "Read-only Stripe MCP server (stdio)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=3.1.0",
+    "stripe>=11.0.0",
+]
