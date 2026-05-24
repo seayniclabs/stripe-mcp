@@ -37,6 +37,7 @@ dependencies = [
     "future>=0.18.3",
     "gitpython>=3.1.47",
     "idna>=3.15",
+    "litellm>=1.61.15",
     "stripe>=11.0.0",
 ]
 
