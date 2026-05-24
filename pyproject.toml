@@ -32,6 +32,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
+    "aiohttp>=3.13.4,<4",
     "fastmcp>=3.1.0",
     "stripe>=11.0.0",
 ]
