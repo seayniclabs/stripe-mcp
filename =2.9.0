@@ -1,0 +1,10 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: cairosvg in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (2.8.2)
+Requirement already satisfied: cairocffi in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairosvg) (1.7.1)
+Requirement already satisfied: cssselect2 in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairosvg) (0.8.0)
+Requirement already satisfied: defusedxml in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairosvg) (0.7.1)
+Requirement already satisfied: pillow in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairosvg) (11.3.0)
+Requirement already satisfied: tinycss2 in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairosvg) (1.4.0)
+Requirement already satisfied: cffi>=1.1.0 in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cairocffi->cairosvg) (1.17.1)
+Requirement already satisfied: pycparser in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cffi>=1.1.0->cairocffi->cairosvg) (2.22)
+Requirement already satisfied: webencodings in /Users/charlieseay/Library/Python/3.9/lib/python/site-packages (from cssselect2->cairosvg) (0.5.1)
