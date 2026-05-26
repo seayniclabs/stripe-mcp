@@ -13,13 +13,7 @@ authors = [
     { name = "Seaynic Labs", email = "hello@seayniclabs.com" },
 ]
 keywords = [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "stripe",
-    "payments",
-    "ai",
-    "llm",
+    "mcp", "mcp-server", "model-context-protocol", "stripe", "payments", "ai", "llm",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -39,6 +33,7 @@ dependencies = [
     "idna>=3.15",
     "litellm>=1.61.15",
     "stripe>=11.0.0",
+    "ecdsa>=0.19.2",
 ]
 
 [project.urls]
