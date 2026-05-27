@@ -3,3 +3,5 @@ pip>=25.3
 aiohttp>=3.13.4
 # Transitive pin — CVE-2026-23490 (ASN.1 DoS); fixed in pyasn1 0.6.2+
 pyasn1>=0.6.2
+# Transitive pin — CVE-2025-48379 (PSD buffer overflow); fixed in pillow 11.3.0+
+pillow>=11.3.0
