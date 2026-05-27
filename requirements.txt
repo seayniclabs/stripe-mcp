@@ -5,3 +5,5 @@ aiohttp>=3.13.4
 pyasn1>=0.6.2
 # Transitive pin — CVE-2025-48379 (PSD buffer overflow); fixed in pillow 11.3.0+
 pillow>=11.3.0
+# Transitive pin — CVE-2026-28684 (path traversal in find_dotenv); fixed in python-dotenv 1.2.2+
+python-dotenv>=1.2.2
