@@ -1,3 +1,5 @@
 # Toolchain pin — CVE-2025-8869 (pip tar extraction); fixed in pip 25.3+
 pip>=25.3
 aiohttp>=3.13.4
+# Transitive pin — CVE-2026-23490 (ASN.1 DoS); fixed in pyasn1 0.6.2+
+pyasn1>=0.6.2
