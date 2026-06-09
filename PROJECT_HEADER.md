@@ -11,6 +11,10 @@
 
 Read-only Stripe MCP server exposing account data (customers, payments, invoices, products, pricing) as structured tool calls for AI assistants. No mutation capabilities — designed for safe, audit-friendly queries only.
 
+## Current State
+
+Stripe-MCP is a read-only Python 3.12+ Stripe MCP server published on PyPI as `stripe-mcp`. Latest commit (6521e9c) fixes aiohttp dependency (CVE-2026-34993). Clean repository (no uncommitted changes). Exposes Stripe account data via stdio MCP protocol; used by Claude Code and Claude Desktop for safe, audit-friendly Stripe queries. No mutation capabilities—designed for read-only analysis and reporting. Supports live and test keys; integrates Stripe Python SDK v13+.
+
 ## Tech Stack
 
 - **Runtime:** Python 3.12+
@@ -101,6 +105,14 @@ claude mcp add stripe-mcp -e STRIPE_SECRET_KEY=sk_test_xxx -- stripe-mcp
   }
 }
 ```
+
+## Next Steps
+
+1. **[Priority: Med]** Add mutation capabilities (Phase 2) — implement safe mutation operations (create invoices, update metadata) with explicit approval gates; require STRIPE_ADMIN_KEY.
+
+2. **[Priority: Med]** Implement analytics tools — add revenue reporting, customer cohort analysis, payment trend analysis; enable business intelligence queries.
+
+3. **[Priority: Low]** Add webhook management tools — expose webhook creation/management/testing via MCP; enable safe automation of webhook workflows.
 
 ## Documentation
 
